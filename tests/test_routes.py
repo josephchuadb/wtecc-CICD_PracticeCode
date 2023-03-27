@@ -24,7 +24,8 @@ class CounterTest(TestCase):
     @classmethod
     def tearDownClass(cls):
         """ This runs once after the entire test suite """
-        pass
+        #pass
+        app.testing = True
 
     def setUp(self):
         """ This runs before each test """
@@ -33,7 +34,8 @@ class CounterTest(TestCase):
 
     def tearDown(self):
         """ This runs after each test """
-        pass
+        #pass
+        app.testing = True
 
 ######################################################################
 #  T E S T   C A S E S
